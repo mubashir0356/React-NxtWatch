@@ -15,6 +15,7 @@ export const HomeRouteContainer = styled.div`
   min-height: 90vh;
   justify-content: space-between;
   width: 100vw;
+  overflow-x: hidden;
 `
 
 export const SidePanelContainer = styled.div`
@@ -27,7 +28,6 @@ export const SidePanelContainer = styled.div`
 `
 export const HomeContainer = styled.div`
   height: 100%;
-  overflow-y: auto;
   flex-grow: 1;
   padding: 20px;
   width: 80vw;
