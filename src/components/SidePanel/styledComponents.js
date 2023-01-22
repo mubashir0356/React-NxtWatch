@@ -18,7 +18,7 @@ export const ContactUsContainer = styled.div`
   margin-bottom: 20px;
 `
 
-export const ContactUsHeading = styled.h1`
+export const ContactUsHeading = styled.p`
   font-family: 'Roboto';
   font-size: 16px;
   font-weight: 600;
@@ -36,7 +36,7 @@ export const ContactUsIcon = styled.img`
   margin: 0px 12px 0px 0px;
 `
 
-export const ContactUsDescription = styled.h1`
+export const ContactUsDescription = styled.p`
   font-family: 'Roboto';
   font-size: 14px;
   font-weight: 500;

@@ -114,7 +114,7 @@ const Header = props => (
                   <LogoutPopupContainer>
                     <LogoutPopupContent theme={theme} color={color}>
                       <LogoutContentDescription theme={theme}>
-                        Are you sure you want to logout?
+                        Are you sure, you want to logout
                       </LogoutContentDescription>
                       <LogoutBtnContainer>
                         <LogoutBtn

@@ -6,6 +6,7 @@ import {BsSearch} from 'react-icons/bs'
 import Loader from 'react-loader-spinner'
 
 import ThemeContext from '../../Context/ThemeContext'
+
 import Header from '../Header'
 import SidePanel from '../SidePanel'
 import VideoItem from '../VideoItem'
@@ -239,7 +240,7 @@ class Home extends Component {
                 <SidePanelContainer>
                   <SidePanel />
                 </SidePanelContainer>
-                <HomeContainer>
+                <HomeContainer theme={theme}>
                   {showPremiumPopup && this.renderPremiumCard()}
                   <SearchContainer>
                     <SearchInput

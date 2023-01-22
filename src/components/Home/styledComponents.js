@@ -31,6 +31,8 @@ export const HomeContainer = styled.div`
   flex-grow: 1;
   padding: 20px;
   width: 80vw;
+  background-color: ${props =>
+    props.theme === 'dark' ? '#0f0f0f' : '#f9f9f9'};
 `
 export const PremiumPopUpBanner = styled.div`
   background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
@@ -101,7 +103,7 @@ export const LoaderContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 90vh;
 `
 export const FailureContainer = styled.div`
   display: flex;
@@ -150,6 +152,7 @@ export const RetryButton = styled.button`
   font-family: 'Roboto';
   font-size: 14px;
   text-align: center;
+  cursor: pointer;
 `
 
 export const NoVideosContainer = styled(FailureContainer)``
