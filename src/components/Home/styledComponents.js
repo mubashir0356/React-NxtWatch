@@ -97,6 +97,8 @@ export const SearchButton = styled.button`
   padding-top: 4px;
   border: 1px solid
     ${props => (props.theme === 'dark' ? ' #212121' : '#d7dfe9')};
+  outline: none;
+  cursor: pointer;
 `
 export const LoaderContainer = styled.div`
   flex-grow: 1;
