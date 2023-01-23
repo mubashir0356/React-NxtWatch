@@ -106,6 +106,11 @@ export const LogoutBtnContainer = styled.div`
   align-items: center;
   width: 90%;
   margin-top: 20px;
+  @media screen and (max-width: 566px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px;
+  }
 `
 
 export const LogoutBtn = styled.button`
@@ -120,6 +125,10 @@ export const LogoutBtn = styled.button`
   text-align: center;
   font-family: 'Roboto';
   font-size: 16px;
+  @media screen and (max-width: 566px) {
+    width: 100%;
+    margin: 10px;
+  }
 `
 
 export const NavDesktopContainer = styled(NavMobileContainer)`

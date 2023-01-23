@@ -34,6 +34,9 @@ export const MenuLink = styled.li`
     align-self: stretch;
     width: 20vw;
   }
+  @media screen and (max-width: 566px) {
+    padding-left: 25%;
+  }
 `
 
 export const MenuHeading = styled.p`

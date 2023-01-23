@@ -179,7 +179,7 @@ class VideoItemDetails extends Component {
                       onClick={this.updateLikeStatus}
                     >
                       <BiLike size={22} style={{paddingTop: '6px'}} />
-                      Like
+                      <LikeDislikeText>Like</LikeDislikeText>
                     </VideoItemButton>
                     <VideoItemButton
                       type="button"
@@ -187,7 +187,7 @@ class VideoItemDetails extends Component {
                       onClick={this.updateDislikeStatus}
                     >
                       <BiDislike size={22} style={{paddingTop: '6px'}} />
-                      Dislike
+                      <LikeDislikeText>Dislike</LikeDislikeText>
                     </VideoItemButton>
                     <SavedVideosContext.Consumer>
                       {savedValue => {

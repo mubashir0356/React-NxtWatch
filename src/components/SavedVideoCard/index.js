@@ -35,13 +35,13 @@ const SavedVideoCard = props => {
 
   const {name, profileImageUrl} = channel
 
-  //   let postedAt = formatDistanceToNow(new Date(publishedAt))
-  //   const postedAtList = postedAt.split(' ')
+  let postedAt = formatDistanceToNow(new Date(publishedAt))
+  const postedAtList = postedAt.split(' ')
 
-  //   if (postedAtList.length === 3) {
-  //     postedAtList.shift()
-  //     postedAt = postedAtList.join(' ')
-  //   }
+  if (postedAtList.length === 3) {
+    postedAtList.shift()
+    postedAt = postedAtList.join(' ')
+  }
 
   const card = value => {
     const {isDarkMode} = value
@@ -72,14 +72,14 @@ const SavedVideoCard = props => {
                         </ListItem>
                         <ListItem2>
                           <ChannelDetailsText1>
-                            {publishedAt}
+                            {`${postedAt} ago`}
                           </ChannelDetailsText1>
                         </ListItem2>
                       </ul>
                       <ul className="published-at-bulletin-1">
                         <ListItem1>
                           <ChannelDetailsText1>
-                            {publishedAt}
+                            {`${postedAt} ago`}
                           </ChannelDetailsText1>
                         </ListItem1>
                       </ul>
